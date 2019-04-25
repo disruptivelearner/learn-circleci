@@ -7,3 +7,12 @@ workflows:
   "Hello Workflow":
     jobs:
       - hello/hello-build
+
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:latest
+    steps:
+      - checkout
+      - run: echo "hey y'all!"
