@@ -15,4 +15,4 @@ jobs:
       - image: circleci/golang:latest
     steps:
       - checkout
-      - run: echo "hey y'all!"
+      - run: go run main.go
